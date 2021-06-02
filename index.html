@@ -1,0 +1,39 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+ 
+<body style="background-color: black; color: chartreuse;font-family: 'Orbitron', sans-serif;">
+    <script src="main.js"></script>
+    <div id="container">
+        <center>
+            <a id="link" href="" download="selfie.jpeg"><img id="download"></a>
+            <h1>Voice Selfie App</h1>
+            <img style="width: 10%;" src="https://d33wubrfki0l68.cloudfront.net/57a206fb69bea28842aa0a5a1d186e41345294ee/85f67/images/blog/sayselfie.png">
+            <div style="width: 100%; height: 1px; background-color: black;"></div>
+            <label style="font-size: large; margin-top: 1%;">Press allow before saying something</label>
+            <div class="form-group">
+                <h1>Try Saying "Take my Selfie"</h1>
+                <label>Your Voice Output: </label>
+                <textarea id="textarea" style="width: 50%; height: 30%; cursor: not-allowed; border: solid 1px black;" readonly="true" class="form-control"></textarea>
+            </div>
+            <button onclick="start()" style="background-color:chartreuse; color:black;" class="btn btn-light">Start</button>
+            <hr><label id="info"></label><hr>
+            <div style="border: 10px solid chartreuse; width: 50%; margin-top: 5%;">
+                <label style="margin-top: 1%;">Webcam- </label>
+                <video src="" id="cam" autoplay></video>
+                <label>Selfie-</label><br>
+                <canvas style="width: 100%;height: 80%;" id="camImg"></canvas>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
